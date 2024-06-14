@@ -4,20 +4,22 @@ import { cn } from "@/lib/utils";
 import { MdEmail } from "react-icons/md";
 import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 import { BiHome, BiPhoneCall } from "react-icons/bi";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import ShimmerButton from "@/components/magicui/shimmer";
 
 function Page() {
   return (
     <main className=" min-h-screen w-full pt-16 flex items-center flex-col select-none">
-        <GridPattern
-                width={20}
-                height={20}
-                x={-1}
-                y={-1}
-                className={cn(
-                  "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] "
-                )}
-                
-              />
+      <GridPattern
+        width={20}
+        height={20}
+        x={-1}
+        y={-1}
+        className={cn(
+          "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] "
+        )}
+      />
       <section className=" relative w-full h-[60vh] flex justify-center gap-20 flex-col  px-28 pr-44 items-center">
         <div className=" flex justify-between  items-center">
           <div className=" text-6xl font-bold w-2/3">
@@ -103,11 +105,13 @@ function Page() {
                 For Community, Society and General Info
               </p>
               <p className="z-10  text-left text-sm font-medium text-zinc-400">
-              <span className=" font-bold">-&gt; Contact Person:</span> Aashi Bansal (PR Lead)
+                <span className=" font-bold">-&gt; Contact Person:</span> Aashi
+                Bansal (PR Lead)
               </p>
               <p className="z-10 flex items-center gap-1 text-left text-sm font-medium text-zinc-400">
-              <MdEmail />
-              <span className=" font-bold">Email:</span> Aashi.23000@sscbs.du.ac.in
+                <MdEmail />
+                <span className=" font-bold">Email:</span>{" "}
+                Aashi.23000@sscbs.du.ac.in
               </p>
               <GridPattern
                 width={20}
@@ -126,11 +130,13 @@ function Page() {
                 For Events, Workshop and Queries
               </p>
               <p className="z-10  text-left text-sm font-medium text-zinc-400">
-              <span className=" font-bold">-&gt; Contact Person:</span> Roshni Yadav (Coordinator)
+                <span className=" font-bold">-&gt; Contact Person:</span> Roshni
+                Yadav (Coordinator)
               </p>
               <p className="z-10 flex items-center gap-1 text-left text-sm font-medium text-zinc-400">
-              <MdEmail />
-              <span className=" font-bold">Email:</span> Roshni.23545@sscbs.du.ac.in
+                <MdEmail />
+                <span className=" font-bold">Email:</span>{" "}
+                Roshni.23545@sscbs.du.ac.in
               </p>
               <GridPattern
                 width={20}
@@ -142,7 +148,6 @@ function Page() {
                 )}
               />
             </div>
-            
           </div>
           <div className=" w-full gap-2 h-24  flex justify-center items-center">
             <div className="relative flex-1 hover:-translate-y-2 duration-100 flex h-full w-full justify-center flex-col overflow-hidden rounded-lg border bg-background px-4 md:shadow-xl">
@@ -150,11 +155,13 @@ function Page() {
                 For Collaboration, Sponsorship and Partnership
               </p>
               <p className="z-10  text-left text-sm font-medium text-zinc-400">
-                <span className=" font-bold">-&gt; Contact Person:</span> Dhruv Prasad (Coordinator)
+                <span className=" font-bold">-&gt; Contact Person:</span> Dhruv
+                Prasad (Coordinator)
               </p>
               <p className="z-10 flex items-center gap-1 text-left text-sm font-medium text-zinc-400">
-              <MdEmail />
-              <span className=" font-bold">Email:</span> Dhruv.23000@sscbs.du.ac.in
+                <MdEmail />
+                <span className=" font-bold">Email:</span>{" "}
+                Dhruv.23000@sscbs.du.ac.in
               </p>
               <GridPattern
                 width={20}
@@ -166,48 +173,63 @@ function Page() {
                 )}
               />
             </div>
-            
           </div>
         </div>
       </section>
       <NeonGradientCard className="border top-10 h-[70vh] w-4/5">
-      <div className="  w-full h-full flex justify-center  ">
-        <div className="  w-1/2 p-5">
-                <h1 className=" text-zinc-400">Contact Us</h1>
-                <h1 className=" text-4xl font-bold">Get In Touch With Us</h1>
-                <p className=" text-sm mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia rem sunt corrupti omnis et tenetur, eius exercitationem itaque autem labore hic.</p>
-                <div className=" flex flex-col gap-6 mt-12">
-                    <div className="  w-2/3 h-16  flex ">
-                        <BiHome className=" h-16 bg-violet-500 w-16 p-3 rounded-md"/>
-                        <div className=" flex-1  text-xs flex flex-col justify-center px-2">
-                            <h1 className=" font-bold text-sm">Our Location</h1>
-                            <p className=" text-zinc-400">Shaheed Sukhdev College of Business Studies, Sector-16, Rohini, New Delhi, India</p>
-                        </div>
-                    </div>
-                    <div className="  w-2/3 h-16  flex ">
-                        <MdEmail className=" h-16 bg-orange-500 w-16 p-3 rounded-md"/>
-                        <div className=" flex-1  text-xs flex flex-col justify-center px-2">
-                            <h1 className=" font-bold text-sm">Email</h1>
-                            <p className=" text-zinc-400">Vineet (President)</p>
-                            <p className=" text-zinc-400">Vineet.22566@sscbs.du.ac.in</p>
-                        </div>
-                    </div>
-                    <div className="  w-2/3 h-16  flex ">
-                        <BiPhoneCall className=" h-16 bg-yellow-500 w-16 p-3 rounded-md"/>
-                        <div className=" flex-1  text-xs flex flex-col justify-center px-2">
-                            <h1 className=" font-bold text-sm">Phone Number</h1>
-                            <p className=" text-zinc-400">Vineet (President)</p>
-                            <p className=" text-zinc-400">+91 88825 97043</p>
-                        </div>
-                    </div>
+        <div className="  w-full h-full flex justify-center  ">
+          <div className="  w-1/2 p-5">
+            <h1 className=" text-zinc-400">Contact Us</h1>
+            <h1 className=" text-4xl font-bold">Get In Touch With Us</h1>
+            <p className=" text-sm mt-5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+              rem sunt corrupti omnis et tenetur, eius exercitationem itaque
+              autem labore hic.
+            </p>
+            <div className=" flex flex-col gap-6 mt-12">
+              <div className="  w-2/3 h-16  flex ">
+                <BiHome className=" h-16 bg-violet-500 w-16 p-3 rounded-md" />
+                <div className=" flex-1  text-xs flex flex-col justify-center px-2">
+                  <h1 className=" font-bold text-sm">Our Location</h1>
+                  <p className=" text-zinc-400">
+                    Shaheed Sukhdev College of Business Studies, Sector-16,
+                    Rohini, New Delhi, India
+                  </p>
                 </div>
+              </div>
+              <div className="  w-2/3 h-16  flex ">
+                <MdEmail className=" h-16 bg-orange-500 w-16 p-3 rounded-md" />
+                <div className=" flex-1  text-xs flex flex-col justify-center px-2">
+                  <h1 className=" font-bold text-sm">Email</h1>
+                  <p className=" text-zinc-400">Vineet (President)</p>
+                  <p className=" text-zinc-400">Vineet.22566@sscbs.du.ac.in</p>
+                </div>
+              </div>
+              <div className="  w-2/3 h-16  flex ">
+                <BiPhoneCall className=" h-16 bg-yellow-500 w-16 p-3 rounded-md" />
+                <div className=" flex-1  text-xs flex flex-col justify-center px-2">
+                  <h1 className=" font-bold text-sm">Phone Number</h1>
+                  <p className=" text-zinc-400">Vineet (President)</p>
+                  <p className=" text-zinc-400">+91 88825 97043</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" flex justify-center items-center w-1/2">
+            <div className=" text-zinc-800 border w-[350px]  bg-stone-200 rounded-lg p-4 flex flex-col gap-4 h-[500px]">
+              <h1 className=" text-2xl font-medium text-zinc-700">Let&apos;s get in touch</h1>
+              <Input className=" mt-4" placeholder="Name" />
+              <Input className=" mt-4" type="email" placeholder="Email" />
+              <Input className="mt-4" placeholder="Subject" />
+              <Textarea className=" mt-4" placeholder="Message" />
+              <ShimmerButton className="shadow-2xl w-full mt-4">
+                <span className="whitespace-pre-wrap text-center text-sm font-bold leading-none tracking-tight text-zinc-300 dark:from-white dark:to-slate-900/10 ">
+                  Send Message
+                </span>
+              </ShimmerButton>{" "}
+            </div>
+          </div>
         </div>
-        <div className=" flex justify-center items-center w-1/2">
-                <form className=" border w-[350px] rounded-lg p-4 h-[500px]">
-                <h1 className=" text-2xl font-medium">Let&apos;s get in touch</h1>
-                </form>
-        </div>
-      </div>
       </NeonGradientCard>
     </main>
   );
