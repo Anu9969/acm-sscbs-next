@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { BorderBeam } from "./border-beam";
 
 export default function RetroGrid({ className }: { className?: string }) {
   return (
@@ -27,6 +28,7 @@ export default function RetroGrid({ className }: { className?: string }) {
 
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent to-90% dark:from-black" />
+      <BorderBeam  />
     </div>
   );
 }

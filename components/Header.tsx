@@ -19,7 +19,7 @@ function Header() {
           <Link  href={'/'}  className=" text-zinc-300 text-lg m-auto hover:font-semibold">
             Meet The Team
           </Link>
-          <Link href={"/"} className=" text-zinc-300 text-lg m-auto hover:font-semibold">
+          <Link href={'/contact'} className=" text-zinc-300 text-lg m-auto hover:font-semibold">
             Contact
           </Link>
           <Link href={'/'}  className="btn" type="button">
