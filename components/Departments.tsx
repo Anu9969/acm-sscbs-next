@@ -2,6 +2,7 @@
 
 import RetroGrid from "@/components/magicui/retro-grid";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
+import { BorderBeam } from "./magicui/border-beam";
 
 const Department = () => {
     const people = [
@@ -69,6 +70,7 @@ const Department = () => {
           <AnimatedTooltip className="" items={[people[0],people[4]]} />
           </div>
         <RetroGrid />
+        <BorderBeam />
         </div>
 
         <div className="relative bg-black flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background p-20 md:shadow-xl">
@@ -79,7 +81,7 @@ const Department = () => {
             <h1>Lead By</h1>
           <AnimatedTooltip className="" items={[people[1]]} />
           </div>
-
+          <BorderBeam  />
           <RetroGrid />
         </div>
 
@@ -92,6 +94,7 @@ const Department = () => {
           <AnimatedTooltip className="" items={[people[2]]} />
           </div>
           <RetroGrid />
+          <BorderBeam />
         </div>
       </div>
     </section>

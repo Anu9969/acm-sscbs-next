@@ -10,11 +10,17 @@ const config: Config = {
     extend: {
       
       animation: {
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
         grid: "grid 15s linear infinite",
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
       keyframes: {
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
+        },
         grid: {
           "0%": { transform: "translateY(-50%)" },
           "100%": { transform: "translateY(0)" },
