@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import '@/app/ui.css'
 import Particles from "@/components/magicui/particles";
 import Footer from "@/components/Footer";
-
+import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Analytics/>
       <body className={inter.className}>
         <Header />
          <div className="fixed h-screen w-screen  ">
