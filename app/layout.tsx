@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import '@/app/ui.css'
 import Particles from "@/components/magicui/particles";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +30,7 @@ export default function RootLayout({
         />
       </div>
         {children}
-       
+       <Footer />
       </body>
     </html>
   );
