@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import '@/app/ui.css'
+import Particles from "@/components/magicui/particles";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+         <div className="fixed h-screen w-screen  ">
+        <Particles
+          className=" fixed h-screen w-screen opacity-80 z-0"
+          size={1}
+          quantity={500}
+        />
+      </div>
+        {children}
+       
+      </body>
     </html>
   );
 }
