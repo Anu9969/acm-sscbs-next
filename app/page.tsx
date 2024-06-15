@@ -1,4 +1,4 @@
-
+'use client'
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import GradualSpacing from "@/components/magicui/gradual-spacing";
