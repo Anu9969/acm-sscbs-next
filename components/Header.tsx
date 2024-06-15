@@ -13,7 +13,7 @@ function Header() {
           <Link  href={'/about'}  className=" text-zinc-300 text-lg m-auto hover:font-semibold">
             About
           </Link>
-          <Link  href={'/'}  className=" text-zinc-300 text-lg m-auto hover:font-semibold">
+          <Link  href={'/events'}  className=" text-zinc-300 text-lg m-auto hover:font-semibold">
             Events
           </Link>
           <Link  href={'/'}  className=" text-zinc-300 text-lg m-auto hover:font-semibold">

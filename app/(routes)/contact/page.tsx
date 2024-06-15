@@ -186,7 +186,7 @@ function Page() {
               rem sunt corrupti omnis et tenetur, eius exercitationem itaque
               autem labore hic.
             </p>
-            <div className=" flex flex-col gap-6 mt-12">
+            <div className=" flex flex-col gap-6 mt-12 select-text">
               <div className="  w-2/3 h-16  flex ">
                 <BiHome className=" h-16 bg-violet-500 w-16 p-3 rounded-md" />
                 <div className=" flex-1  text-xs flex flex-col justify-center px-2">
@@ -216,7 +216,7 @@ function Page() {
             </div>
           </div>
           <div className=" flex justify-center items-center w-1/2">
-            <div className=" text-zinc-800 border w-[350px]  bg-stone-200 rounded-lg p-4 flex flex-col gap-4 h-[500px]">
+            <div className=" text-zinc-800 border w-[350px] bg-neutral-300 rounded-lg p-4 flex flex-col gap-4 h-[480px]">
               <h1 className=" text-2xl font-medium text-zinc-700">Let&apos;s get in touch</h1>
               <Input className=" mt-4" placeholder="Name" />
               <Input className=" mt-4" type="email" placeholder="Email" />

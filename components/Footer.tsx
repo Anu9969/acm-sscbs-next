@@ -3,7 +3,7 @@ import Wave from 'react-wavify'
 
 function Footer() {
   return (
-    <div className=' h-[50vh]  relative'>
+    <div className=' h-[50vh] relative'>
           <Wave fill='#f5f5f5'
         paused={false}
         style={{ display: 'flex' }}
