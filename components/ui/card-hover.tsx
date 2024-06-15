@@ -55,7 +55,7 @@ export const HoverEffect = ({
                 <Image src={item.image ? item.image : "https://cdn.statically.io/gh/vinitvijal/images-cdn/main/11.png"} alt="profile" className=" w-full" width={1000} height={1000} />
                 <div className=" font-medium">
                     <h1 className=" flex gap-2">Name:  <AnimatedShinyText className="transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"><span>{item.name} ✨</span></AnimatedShinyText></h1>
-                    <h1 className=" flex gap-2">Code Name: <AnimatedShinyText className="transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"><span>{item.nickName ? item.nickName : "🤫 Encrypted"}</span></AnimatedShinyText></h1>
+                    <h1 className=" flex gap-2 text-nowrap">Code Name: <AnimatedShinyText className=" text-wrap transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"><span>{item.nickName ? item.nickName : "🤫 Encrypted"}</span></AnimatedShinyText></h1>
                     <h1 className=" flex w-full mt-2 justify-center"><AnimatedShinyText className="transition font-light ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"><span>{item.email}</span></AnimatedShinyText></h1>
                     <div className=" mt-4 flex gap-5">
                         {item.linkedin && <Link target="_blank" href={item.linkedin}><BsLinkedin size={25}/></Link>}

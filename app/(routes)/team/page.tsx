@@ -110,7 +110,7 @@ function Page() {
       </div>
       <section className=" min-h-screen w-full">
         <Fade  duration={1500}>
-          <p className=" px-10 text-9xl bg-clip-text text-transparent font-extrabold bg-gradient-to-b from-white to-gray-500/80">
+          <p className=" px-16 text-9xl bg-clip-text text-transparent font-extrabold bg-gradient-to-b from-white to-gray-500/80">
             Advisory Committee Team
           </p>
         </Fade>
@@ -121,7 +121,7 @@ function Page() {
 
       <section className=" mt-24 min-h-screen w-full">
         <Fade  duration={1500}>
-          <p className=" px-10 text-9xl bg-clip-text text-transparent font-extrabold bg-gradient-to-b from-white to-gray-500/80">
+          <p className=" px-16 text-9xl bg-clip-text text-transparent font-extrabold bg-gradient-to-b from-white to-gray-500/80">
             Core Committee Team
           </p>
         </Fade>
