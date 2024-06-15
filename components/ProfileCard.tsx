@@ -1,11 +1,11 @@
 import React from 'react'
 
-function page() {
+function ProfileCard() {
   return (
     <div>
-      Hello
+      Hii
     </div>
   )
 }
 
-export default page
+export default ProfileCard

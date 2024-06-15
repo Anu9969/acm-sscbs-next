@@ -16,7 +16,7 @@ function Header() {
           <Link  href={'/events'}  className=" text-zinc-300 text-lg m-auto hover:font-semibold">
             Events
           </Link>
-          <Link  href={'/'}  className=" text-zinc-300 text-lg m-auto hover:font-semibold">
+          <Link  href={'/team'}  className=" text-zinc-300 text-lg m-auto hover:font-semibold">
             Meet The Team
           </Link>
           <Link href={'/contact'} className=" text-zinc-300 text-lg m-auto hover:font-semibold">

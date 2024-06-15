@@ -253,7 +253,7 @@
   .button::before {
     position: absolute;
     bottom: -20px;
-    content: "About Us";
+    content: "Know More";
     color: white;
     /* transition-duration: .3s; */
     font-size: 0px;
