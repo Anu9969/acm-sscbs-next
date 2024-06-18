@@ -52,7 +52,9 @@ export const HoverEffect = ({
           <Card className=" z-10">
             <div className=" flex flex-col">
             <h1 className=" flex w-full justify-center"><AnimatedShinyText className=" text-xl font-semibold transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"><span>{item.role}</span></AnimatedShinyText></h1>
-                <Image src={item.image ? item.image : "https://cdn.statically.io/gh/vinitvijal/images-cdn/main/11.png"} alt="profile" className=" w-full" width={1000} height={1000} />
+              {/* <Suspense fallback={<Skeleton className="w-full h-[400px] rounded-lg" />}> */}
+                  <Image src={item.image ? item.image : "https://cdn.statically.io/gh/vinitvijal/images-cdn/main/11.png"} alt="profile" className=" w-full" width={1000} height={1000} />
+              {/* </Suspense> */}
                 <div className=" font-medium">
                     <h1 className=" flex gap-2">Name:  <AnimatedShinyText className="transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"><span>{item.name} ✨</span></AnimatedShinyText></h1>
                     <h1 className=" flex gap-2 text-nowrap">Code Name: <AnimatedShinyText className=" text-wrap transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400"><span>{item.nickName ? item.nickName : "🤫 Encrypted"}</span></AnimatedShinyText></h1>
