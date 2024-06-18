@@ -37,7 +37,7 @@ const Department = () => {
         },
       ];
   return (
-    <section className=" flex flex-col w-full h-screen gap-10 select-none">
+    <section className=" flex flex-col w-full min-h-screen gap-10 select-none">
       <div className=" w-full flex justify-center items-center flex-col gap-3">
         <h1 className=" text-6xl font-bold">Our Departments</h1>
         <h1 className=" text-lg font-medium text-zinc-400">
@@ -45,8 +45,8 @@ const Department = () => {
         </h1>
       </div>
 
-      <div className=" grid grid-cols-3 p-10 gap-8">
-        <div className="relative bg-black flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background p-20 md:shadow-xl">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-8">
+        <div className="relative bg-black flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border m-auto bg-background p-20 md:shadow-xl">
           <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b to-[#f6ea41] via-[#ff2975] from-[#f048c6] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent">
             Web Dev
           </span>
@@ -57,7 +57,7 @@ const Department = () => {
         <RetroGrid />
         </div>
 
-        <div className="relative bg-black flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background p-20 md:shadow-xl">
+        <div className="relative bg-black flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border  m-auto bg-background p-20 md:shadow-xl">
           <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent">
             Graphic Design
           </span>
@@ -68,7 +68,7 @@ const Department = () => {
           <RetroGrid />
         </div>
 
-        <div className="relative bg-black flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background p-20 md:shadow-xl">
+        <div className="relative bg-black flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border  m-auto bg-background p-20 md:shadow-xl">
           <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#9618f7] via-[#ff2975] to-[#5d69e8] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent">
             Public Relations
           </span>

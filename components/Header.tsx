@@ -1,25 +1,30 @@
+'use client'
+import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 function Header() {
+  const path = usePathname();
+  console.log("path:" + path)
   return (
     <header className=" fixed h-16 w-full border-b px-5 border-zinc-600 bg-black z-20 ">
-      <nav className=" flex justify-between items-center h-full w-full">
+      <nav className=" flex justify-between items-center   h-full w-full">
         <p className=" text-zinc-300 text-2xl font-bold ">ACM</p>
-        <ul className=" flex justify-between items-center h-full w-1/2">
-          <Link href={'/'} className=" text-zinc-300 text-lg m-auto  hover:font-semibold">
+        <ul className=" md:flex justify-between hidden items-center gap-4 h-full max-w-1/2">
+          <Link href={'/'} className={cn("  text-lg m-auto  hover:font-semibold", path==='/'?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             Home
           </Link>
-          <Link  href={'/about'}  className=" text-zinc-300 text-lg m-auto hover:font-semibold">
+          <Link  href={'/about'}  className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/about')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             About
           </Link>
-          <Link  href={'/events'}  className=" text-zinc-300 text-lg m-auto hover:font-semibold">
+          <Link  href={'/events'}  className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/events')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             Events
           </Link>
-          <Link  href={'/team'}  className=" text-zinc-300 text-lg m-auto hover:font-semibold">
+          <Link  href={'/team'}  className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/team')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             Meet The Team
           </Link>
-          <Link href={'/contact'} className=" text-zinc-300 text-lg m-auto hover:font-semibold">
+          <Link href={'/contact'} className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/contact')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             Contact
           </Link>
           <Link href={'/'}  className="btn" type="button">
@@ -34,6 +39,9 @@ function Header() {
             </div>
           </Link>
         </ul>
+        <div className=" md:hidden">
+          <button className=" text-zinc-300 text-2xl font-bold">☰</button>
+        </div>
       </nav>
     </header>
   );
