@@ -66,7 +66,7 @@ function Page() {
           left={true}
         />
         <EventCard
-          imgUrl="https://cdn.statically.io/gh/vinitvijal/images-cdn/main/ideagem1.jpg"
+          imgUrl="https://cdn.statically.io/gh/vinitvijal/images-cdn/main/acminsider.png"
           // link="/events/Ideagem"
           title="ACM Insider 1.0 - Competitive Coding"
           date="23th November 2023"
