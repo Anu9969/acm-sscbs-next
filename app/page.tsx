@@ -37,7 +37,7 @@ function Page() {
           <Fade triggerOnce={true} duration={1500} delay={500}>
             <WordFadeIn
               className="text-zinc-300 text-lg text-center"
-              words="The Association for Computing Machinery (ACM) is an international learned society for computing. It was founded in 1947, and is the world's largest scientific and educational computing society. The ACM is a non-profit professional membership group, claiming nearly 100,000 student and professional members as of 2019. Its headquarters are in New York City."
+              words="The Association for Computing Machinery (ACM) is an international learned society for computing. It was founded in 1947, and is the world's largest scientific and educational computing society. The ACM is a non-profit professional membership group, claiming nearly 100,000 student and professional members as of 2019. Its headquarters are in New York City. "
             />
             ;
           </Fade>
