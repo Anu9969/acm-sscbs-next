@@ -22,7 +22,6 @@ const BlurIn = ({ word, className, variant, duration = 1 }: BlurIntProps) => {
     <motion.h1
       initial="hidden"
       animate="visible"
-        exit="hidden"
       transition={{ duration }}
       variants={combinedVariants}
       className={cn(

@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       
       animation: {
+        gradient: "gradient 8s linear infinite",
         shimmer: "shimmer 8s infinite",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
         slide: "slide var(--speed) ease-in-out infinite alternate",
@@ -21,6 +22,11 @@ const config: Config = {
           "background-position-spin 3000ms infinite alternate",
       },
       keyframes: {
+        gradient: {
+          to: {
+            backgroundPosition: "var(--bg-size) 0",
+          },
+        },
         shimmer: {
           "0%, 90%, 100%": {
             "background-position": "calc(-100% - var(--shimmer-width)) 0",
