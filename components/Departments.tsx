@@ -37,7 +37,7 @@ const Department = () => {
         },
       ];
   return (
-    <section className=" flex flex-col w-full min-h-screen gap-10 select-none">
+    <section className=" flex flex-col px-4 w-full min-h-screen gap-10 select-none">
       <div className=" w-full flex justify-center items-center flex-col gap-3">
         <h1 className=" text-6xl font-bold">Our Departments</h1>
         <h1 className=" text-lg font-medium text-zinc-400">

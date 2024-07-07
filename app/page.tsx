@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import GradualSpacing from "@/components/magicui/gradual-spacing";
@@ -17,19 +17,27 @@ function Page() {
           </p>
         </Fade>
         <GradualSpacing
-          className="font-display text-center md:text-3xl text-xl font-bold tracking-[-0.1em]  text-zinc-300"
+          className="font-display text-center md:text-3xl sm:text-xl text-sm font-bold tracking-[-0.1em]  text-zinc-300"
           text=" The Computer Science Chapter of SSCBS"
         />
-        <button onClick={()=>{window.scroll({
-       top: 750,
-       behavior: 'smooth'
-    })}} className="button scroll-smooth absolute bottom-4" >
+        <button
+          onClick={() => {
+            window.scroll({
+              top: 750,
+              behavior: "smooth",
+            });
+          }}
+          className="button scroll-smooth absolute bottom-4"
+        >
           <svg className="svgIcon" viewBox="0 0 384 512">
             <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
           </svg>
         </button>
       </section>
-      <section className=" z-20 flex h-screen w-screen flex-col md:flex-row" id="about">
+      <section
+        className=" z-20 flex h-screen w-screen flex-col md:flex-row"
+        id="about"
+      >
         <div className=" flex flex-col  justify-center items-center md:w-1/2 w-full px-5 h-full">
           <Fade triggerOnce={true} duration={1500}>
             <h1 className=" text-6xl font-bold text-zinc-300">About Us</h1>

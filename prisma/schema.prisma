@@ -33,3 +33,24 @@ model Members {
   skills String?
   interests String?
 }
+
+model Participations {
+  eventid    Int     @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  eventname  String?
+  eventdate  DateTime?
+  eventlocation String?
+  registrations String?
+  para1 String?
+  para2 String?
+  para3 String?
+  para4 String?
+  para5 String?
+  para6 String?
+  photo1 String?
+  photo2 String?
+  photo3 String?
+  photo4 String?
+  photo5 String?
+  headingPhoto String?
+}

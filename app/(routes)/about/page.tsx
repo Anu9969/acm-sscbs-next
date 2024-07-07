@@ -4,25 +4,16 @@ import { PacmanLoader } from 'react-spinners';
 
 
 function Page() {
-    // make this page 3 second delay to render the page
 
     return (   
-        <section className=' h-screen flex justify-center flex-col text-lg font-bold gap-8 items-center'>
-            <PacmanLoader
-            className=' w-52 h-10'
-        color={'#ffffff'}
-        size={40}
-        loading={true}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
-      Under Development
-        </section>
-    //     <div className=" h-screen z-40 w-full flex justify-center items-center">
-    //   <div className="loader z-40">
-    //     <div className="circle z-40"></div>
-    //   </div>
-    // </div>
+        <main className=' min-h-screen w-full'>
+            <section className=' w-full h-screen border flex pt-16'>
+                <div className=' border w-1/2 h-full flex-1'>left</div>
+                <div className=' border w-1/2 h-full'>right</div>
+            </section>
+            <section>bottom</section>
+        </main>
+
     )
   
 }

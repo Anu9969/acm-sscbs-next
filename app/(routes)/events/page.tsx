@@ -23,9 +23,8 @@ import EventCard from "@/components/EventCard";
 function Page() {
   return (
     <main className=" min-h-screen w-screen pt-16">
-      <section className=" h-[60vh] w-full flex flex-col justify-center items-center">
-        <h1 className=" ">Tech Fest of SSCBS</h1>
-        <h2>Coming Soon...</h2>
+      <section className=" h-[60vh] w-full flex flex-col justify-center items-center relative">
+        <Image src="/techfest.webp" alt="alt" width={10000} height={1000} className=" w-full top-0 h-auto absolute" />
       </section>
       <section className="min-h-screen w-full p-20 px-56">
         <BlurIn

@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 
 function Header() {
   const path = usePathname();
@@ -15,11 +16,15 @@ function Header() {
           <Link href={'/'} className={cn("  text-lg m-auto  hover:font-semibold", path==='/'?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             Home
           </Link>
+          
           <Link  href={'/about'}  className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/about')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             About
           </Link>
           <Link  href={'/events'}  className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/events')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             Events
+          </Link>
+          <Link href={'/participations'} className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/participations')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
+            Participation
           </Link>
           <Link  href={'/team'}  className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/team')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             Meet The Team
@@ -39,9 +44,21 @@ function Header() {
             </div>
           </Link>
         </ul>
-        <div className=" md:hidden">
-          <button className=" text-zinc-300 text-2xl font-bold">☰</button>
-        </div>
+        <Drawer>
+  <DrawerTrigger className=" md:hidden text-zinc-300 text-2xl font-bold">☰</DrawerTrigger>
+  <DrawerContent>
+    <DrawerHeader>
+      <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+      <DrawerDescription>This action cannot be undone.</DrawerDescription>
+    </DrawerHeader>
+    <DrawerFooter>
+      <button>Submit</button>
+      <DrawerClose>
+        <button >Cancel</button>
+      </DrawerClose>
+    </DrawerFooter>
+  </DrawerContent>
+</Drawer>
       </nav>
     </header>
   );
