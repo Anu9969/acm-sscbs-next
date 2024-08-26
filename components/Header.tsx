@@ -23,9 +23,9 @@ function Header() {
           <Link  href={'/events'}  className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/events')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             Events
           </Link>
-          <Link href={'/participations'} className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/participations')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
+          {/* <Link href={'/participations'} className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/participations')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             Participation
-          </Link>
+          </Link> */}
           <Link  href={'/team'}  className={cn("  text-lg m-auto  hover:font-semibold", path.startsWith('/team')?' text-pink-400 font-semibold underline underline-offset-8 ': 'text-zinc-300')}>
             Meet The Team
           </Link>

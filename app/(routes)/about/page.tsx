@@ -6,12 +6,12 @@ import { PacmanLoader } from 'react-spinners';
 function Page() {
 
     return (   
-        <main className=' min-h-screen w-full'>
-            <section className=' w-full h-screen border flex pt-16'>
-                <div className=' border w-1/2 h-full flex-1'>left</div>
-                <div className=' border w-1/2 h-full'>right</div>
+        <main className=' min-h-screen w-full pt-16'>
+            <section className=' w-full min-h-screen flex flex-col items-center py-16 '>
+                <h1 className=' text-6xl font-bold'>Orientation <span className=' text-amber-400'>2024</span></h1>
+                <h2 className=' text-xl text-zinc-200/50 mb-24'>Welcome to SSCBS, Batch &apos;27 & &apos;28 – where innovation meets ambition. Get ready to redefine the future!</h2>
+                <iframe className=' aspect-video md:w-2/3 rounded-md z-40 w-full px-5' src="https://www.youtube.com/embed/fOsA4HcDGtE" title="ACM Orientation" frameBorder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope;  web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </section>
-            <section>bottom</section>
         </main>
 
     )
