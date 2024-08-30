@@ -26,13 +26,14 @@ async function Page({ params }: { params: { memberId: string;} }) {
                 <h1 className=' flex gap-1 text-xl font-light mb-10'>{member?.bio}</h1>
             </BoxReveal>
             <BoxReveal boxColor={"#FFF6E9"} duration={0.5}>
-            <span className=' flex gap-2 text-2xl font-semibold '><span className=' flex items-center gap-2'><FcEngineering/>Role:</span> <p className=' text-zinc-400'>{member?.role}</p></span>
+              
+            <span className=' flex gap-2 text-2xl font-semibold '><span className=' flex items-start gap-2'><FcEngineering/>Role:</span> <p className=' text-zinc-400'>{member?.role}</p></span>
             </BoxReveal>
             <BoxReveal boxColor={"#FFF6E9"} duration={0.5}>
-            <span className=' flex gap-2  text-2xl font-semibold '><span className=' flex text-nowrap items-center gap-2'><FcSportsMode/>Hobbies:</span> <p className=' text-zinc-400'>{member?.hobbies}</p></span>
+            <span className=' flex gap-2  text-2xl font-semibold '><span className=' flex text-nowrap items-start gap-2'><FcSportsMode/>Hobbies:</span> <p className=' text-zinc-400'>{member?.hobbies}</p></span>
             </BoxReveal>
             <BoxReveal boxColor={"#FFF6E9"} duration={0.5}>
-            <span className=' flex  gap-2  text-2xl font-semibold '><span className=' text-nowrap flex items-center gap-2'><FcElectricity/>Interesting Facts:</span> <p className=' text-zinc-400'>{member?.interests}</p></span>
+            <span className=' flex  gap-2  text-2xl font-semibold '><span className=' text-nowrap flex items-startsWith gap-2'><FcElectricity/>Interesting Facts:</span> <p className=' text-zinc-400'>{member?.interests}</p></span>
             </BoxReveal>
           </div>
           <div className=' h-full w-1/3'>
@@ -44,3 +45,8 @@ async function Page({ params }: { params: { memberId: string;} }) {
 }
 
 export default Page
+
+
+
+
+//replaced item center with item start for alignment 
