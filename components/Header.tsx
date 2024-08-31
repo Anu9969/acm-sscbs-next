@@ -67,5 +67,3 @@ function Header() {
 export default Header;
 
 
-
-//Added inline block and min - width to the links for better alignment
